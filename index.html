@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+            <title></title>
+
+        <!--custom stylesheet-->
+        <link rel="stylesheet" href="css/style.css">
+        <!--external stylesheets-->
+        <link rel="stylesheet" href="lib/scrollmap.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet"> 
+
+    </head>
+
+    <body>
+        <div class="content">
+             <!--title block, background image is title image-->
+            <div class="row" style="background-image:url(assets/WPA_WTMontana4.jpg);background-size:contain">
+                <div class="center title">
+                    <h1>WPA Poster Style Map</h1>
+                    <p1 class="author">Luc Messmer</p1>
+                </div>
+                <div class="center"></div>
+            </div>
+            <!--text content block-->
+            <div class="row">
+                <div class="center">
+                    <p>This page describes a map style inspired by posters produced by the Works Progress Administration.</p>
+                </div>
+            </div>
+            <!--side by side text and image-->
+            <div class="row">
+                <div class="left">
+                    <img class="fit" src="assets/L3InspirationWPA.png">
+                </div>
+                <div class="right">
+                    <p class="vert-center"><p>In the 1930s and 1940s the Federal Art Project, under the Works Progress Administration, produced thousands of posters for Federally funded programs such as theater, public awareness campaigns, and the National Parks. </p>
+                    <p>This map style uses subdued colors and a sans serif font to emulate the style of the WPA posters.  It favors browns, greens, and blues, with red used to emphasize roadways.</p>
+                    
+                </div>
+            </div>
+
+            <!--background images with text scrolling over them (sidecar)-->
+            <div class="scroll-container">    
+                <!--background images-->
+                <div class="background-item">
+                    <img src="assets/WisconsinLarge.png" data-slide="1" class="fit">
+                    <img src="assets/FortAtkinsonLarge.png" data-slide="2" class="fit hidden">
+                    <img src="assets/ApostleIslandsLarge.png" data-slide="3" class="fit hidden">
+                    <img src="assets/campuslarge.png" data-slide="4" class="fit hidden">
+                </div>
+                <!--foreground text blocks-->
+                <div class="foreground-item">
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">An overview of Wisconsin and the surrounding states.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">Fort Atkinson, Wisconsin.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">The Apostle Islands.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="center background-transparent rounded">
+                            <p class="no-margin">This overview of the UW campus shows the general appearance of built up areas with streets and buildings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <!-- Slideshow container -->
+                    <div class="slideshow-container">
+                        <!--slideshow content goes here-->
+                        <div class="slide">
+                            <img src="assets/ContinentalUS.png">
+                            <p class="caption">View of the U.S.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/MidscaleCalifornia.png">
+                            <p class="caption">Southern California and surrounding states at mid-scale</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/LosAngelesLargeScale.png">
+                            <p class="caption">A large-scale view of Los Angeles.</p>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/HaciendaHeights.png">
+                            <p class="caption">Hacienda Heights, California.</p>
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev">&#10094;</a>
+                        <a class="next">&#10095;</a>
+
+                        <!-- The dots/circles -->
+                        <div class="slideshow-dots">
+                            <span class="dot" id="1"></span>
+                            <span class="dot" id="2"></span>
+                            <span class="dot" id="3"></span>
+                            <span class="dot" id="4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="center-wide">
+                    <iframe class="fit" src="https://api.mapbox.com/styles/v1/lmessmer/clp1g90xr00qc01qd43n78heh.html?title=view&access_token=pk.eyJ1IjoibG1lc3NtZXIiLCJhIjoiY2xvZWprejdsMGdiOTJqbXU4c2RoZHR1ciJ9.vpnbaGaisMxELTwj7YWU7g&zoomwheel=true&fresh=true#12.31/42.99382/-88.01636"></iframe>
+                </div>
+            </div>
+
+            <!--credits-->
+            <div class="row no-margin">
+                <div class="center">
+                    <div class="credits">
+                        <p><b>Credits:</b></p>
+                        <p>Map created with Mapbox Studio</p>
+                        <p>Data from openstreetmap</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--external scripts-->
+        <script type="text/javascript" src="lib/scrollmap.js"></script>
+    </body>
+</html>
